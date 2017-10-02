@@ -1,3 +1,4 @@
+<script src="{{ asset('js/app.js') }}"></script>
 <script src="themes/js/common.js"></script>
 		<script src="themes/js/jquery.flexslider-min.js"></script>
 		<script type="text/javascript">

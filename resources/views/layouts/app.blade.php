@@ -111,10 +111,17 @@
             </section>          
             </div>
 
+   
+    <div id="wrapper" class="container">
+     <section class="header_text sub">
+            <img class="pageBanner" src={{asset('img/pageBanner.png')}} alt="New products" >
+                <h4><span>Login or Regsiter</span></h4>
+            </section>  
+
 
         @yield('content')
-    </div>
-    <div id="wrapper" class="container">
+    
+    
     <section id="footer-bar">
                 <div class="row">
                     <div class="span3">
