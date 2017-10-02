@@ -36,3 +36,6 @@ Route::get('/cart' , function(){
 Route::get('/contact' , function(){
 	return view('layouts.contact');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
