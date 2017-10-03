@@ -24,18 +24,26 @@ Route::get('/register', function(){
 	return view('layouts.register');
 });
 
-Route::get('/checkout' , function(){
-	return view('layouts.checkout');
-});
+Route::get('/checkout' , 'userscontrol@checkout')->middleware('authenticated');
 
 
-Route::get('/cart' , function(){
-	return view('layouts.cart');
-});
+Route::get('/cart' , 'userscontrol@cart')->middleware('authenticated');
 
-Route::get('/contact' , function(){
-	return view('layouts.contact');
-});
+Route::get('/contact' , 'userscontrol@contact');
+
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+
+Route::get('/products' , function(){
+	return view('layouts.products');
+});
+
+
+
+Route::get('/product_detail' , function(){
+	return view('layouts.product_detail');
+});

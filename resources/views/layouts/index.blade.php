@@ -8,10 +8,10 @@
 				<div class="flexslider">
 					<ul class="slides">
 						<li>
-							<img  src={{asset('img/banner1.jpg')}} alt="image1" />
+							<img  src="{{asset('img/banner1.jpg')}}" alt="image1" />
 						</li>
 						<li>
-							<img src={{asset('img/banner2.jpg')}} alt="" />
+							<img src="{{asset('img/banner2.jpg')}}" alt="" />
 							<div class="intro">
 								<h1>Mid season sale</h1>
 								<p><span>Up to 50% Off</span></p>
