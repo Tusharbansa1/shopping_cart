@@ -8,7 +8,7 @@
 				<div class="span8">
 					<div class="account pull-right">
 						<ul class="user-menu">              
-                            <li><a href="#">My Account</a></li>
+                            <li><a href="profile">My Account</a></li>
                             <li><a href="cart">Your Cart</a></li>
                             <li><a href="checkout">Checkout</a></li>                    
                             @guest

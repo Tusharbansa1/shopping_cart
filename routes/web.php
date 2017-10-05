@@ -27,8 +27,6 @@ Route::get('/register', function(){
 Route::get('/checkout' , 'userscontrol@checkout')->middleware('authenticated');
 
 
-Route::get('/cart' , 'userscontrol@cart')->middleware('authenticated');
-
 Route::get('/contact' , 'userscontrol@contact');
 
 
@@ -38,12 +36,19 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 
 
-Route::get('/products' , function(){
-	return view('layouts.products');
-});
-
-
 
 Route::get('/product_detail' , function(){
 	return view('layouts.product_detail');
 });
+
+// group of route thats it 
+Route::group(['middleware' => 'authenticated'] ,function(){
+
+Route::get('/products' , 'userscontrol@products');
+
+Route::get('/cart' , 'userscontrol@cart');
+
+
+Route::get('/profile/{username}' , 'userscontrol@profile');
+});
+
